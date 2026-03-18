@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mis XV A帽os - Valeria</title>
+<title>Mis XV Años - Valeria</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
@@ -13,12 +13,13 @@
 /* VARIABLES DE COLOR */
 
 :root{
---color1:#a855f7;   /* morado fuerte */
---color2:#c084fc;   /* morado medio */
---color3:#e9d5ff;   /* morado claro */
---glass: rgba(168, 85, 247, 0.08); /* glass morado */
---shadow:rgba(0,0,0,.4);
+--color1:#7b2cbf;   /* morado fuerte */
+--color2:#9d4edd;   /* morado medio */
+--color3:#b693ff;   /* morado claro */
+--glass: rgba(123, 44, 191, 0.08); /* glass morado */
+--shadow: rgba(0,0,0,.4);
 }
+
 
 *{
 margin:0;
@@ -249,14 +250,8 @@ left:21px;
 top:0;
 bottom:0;
 width:3px;
-
-background:linear-gradient(
-to bottom,
-var(--color2),
-var(--color1)
-);
-
-box-shadow:0 0 15px var(--color3);
+background:linear-gradient(to bottom, var(--color2), var(--color1));
+box-shadow:0 0 20px var(--color3);
 }
 
 .timeline-item{
@@ -264,7 +259,6 @@ display:flex;
 align-items:center;
 gap:20px;
 margin:45px 0;
-
 opacity:0;
 transform:translateY(40px);
 transition:all .6s ease;
@@ -274,27 +268,14 @@ transition:all .6s ease;
 width:50px;
 height:50px;
 border-radius:50%;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 font-size:22px;
-
-background:linear-gradient(
-135deg,
-var(--color2),
-var(--color1)
-);
-
+background:linear-gradient(135deg, var(--color2), var(--color1));
 border:1px solid rgba(255,255,255,.4);
-
-box-shadow:
-0 8px 20px var(--shadow),
-0 0 10px var(--color3);
-
+box-shadow:0 8px 20px var(--shadow), 0 0 15px var(--color3);
 color:white;
-
 transition:.4s;
 }
 
@@ -319,10 +300,9 @@ transform:translateY(0);
 }
 
 .timeline-item.active .circle{
-box-shadow:
-0 0 15px var(--color3),
-0 0 30px var(--color3);
-transform:scale(1.2);
+filter:brightness(1.4) saturate(1.3);
+box-shadow:0 0 30px var(--color2), 0 0 50px var(--color1);
+transform:scale(1.25);
 }
 
 /* CORAZON */
@@ -534,7 +514,7 @@ animation:fiesta 1.5s infinite;
 
 <body>
 
-<button class="music-btn" onclick="toggleMusic()">馃幍</button>
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
 
 <audio id="musica" loop>
 <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2d6d5e7b3e.mp3">
@@ -554,7 +534,7 @@ animation:fiesta 1.5s infinite;
 <span>l</span>
 <span>a</span>
 </h1>
-<p>Mis XV A帽os</p>
+<p>Mis XV Años</p>
 <p>20 de Diciembre 2026</p>
 <img src="https://i.postimg.cc/V6bkN148/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260317-203206-0000.png">
 </div>
@@ -569,7 +549,7 @@ animation:fiesta 1.5s infinite;
 
 <div class="time-box">
 <span id="dias">00</span>
-<p>D铆as</p>
+<p>Días</p>
 </div>
 
 <div class="time-box">
@@ -594,11 +574,11 @@ animation:fiesta 1.5s infinite;
 
 <div class="section">
 <p>
-Con la bendici贸n de Dios<br>
+Con la bendición de Dios<br>
 y el amor de mis padres<br>
 te invito a celebrar conmigo<br>
 este momento tan especial 
-<span class="corazon">鉂�</span>
+<span class="corazon">❤️</span>
 </p>
 </div>
 
@@ -606,8 +586,8 @@ este momento tan especial
 
 <div class="section">
 <h2>Mis Padres</h2>
-<p>Mar铆a L贸pez</p>
-<p>Jos茅 Ram铆rez</p>
+<p>María López</p>
+<p>José Ramírez</p>
 </div>
 
 <!-- PADRINOS -->
@@ -622,27 +602,27 @@ este momento tan especial
 
 <div class="section">
 <h2>Ceremonia Religiosa</h2>
-<p>Parroquia Nuestra Se帽ora de Guadalupe</p>
+<p>Parroquia Nuestra Señora de Guadalupe</p>
 <p>5:00 PM</p>
 
 <img src="https://i.postimg.cc/DfpmPjJ6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260317-191609-0000.png">
 
 <a class="btn" href="https://maps.google.com" target="_blank">
-Ver Ubicaci贸n
+Ver Ubicación
 </a>
 </div>
 
 <!-- RECEPCION -->
 
 <div class="section">
-<h2>Recepci贸n</h2>
-<p>Sal贸n Los Olivos</p>
+<h2>Recepción</h2>
+<p>Salón Los Olivos</p>
 <p>8:00 PM</p>
 
-<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3">
+<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" style="height:250px; object-fit:cover;">
 
 <a class="btn" href="https://maps.google.com" target="_blank">
-C贸mo llegar
+Cómo llegar
 </a>
 </div>
 
@@ -655,7 +635,7 @@ C贸mo llegar
 <div class="timeline">
 
 <div class="timeline-item">
-<div class="circle">馃懃</div>
+<div class="circle">👥</div>
 <div class="content">
 <span>7:30 pm</span>
 Llegada de invitados
@@ -663,15 +643,15 @@ Llegada de invitados
 </div>
 
 <div class="timeline-item">
-<div class="circle heart">鉂�</div>
+<div class="circle heart">❤</div>
 <div class="content">
 <span>8:00 pm</span>
-Presentaci贸n
+Presentación
 </div>
 </div>
 
 <div class="timeline-item">
-<div class="circle">馃幍</div>
+<div class="circle">🎵</div>
 <div class="content">
 <span>8:30 pm</span>
 Vals
@@ -679,7 +659,7 @@ Vals
 </div>
 
 <div class="timeline-item">
-<div class="circle">馃</div>
+<div class="circle">🥂</div>
 <div class="content">
 <span>8:45 pm</span>
 Brindis
@@ -687,7 +667,7 @@ Brindis
 </div>
 
 <div class="timeline-item">
-<div class="circle">馃嵔</div>
+<div class="circle">🍽</div>
 <div class="content">
 <span>8:50 pm</span>
 Cena
@@ -695,7 +675,7 @@ Cena
 </div>
 
 <div class="timeline-item">
-<div class="circle">馃捒</div>
+<div class="circle">💿</div>
 <div class="content">
 <span>9:35 pm</span>
 Fiesta DJ
@@ -706,7 +686,7 @@ Fiesta DJ
 </div><!-- VESTIMENTA -->
 
 <div class="section">
-<h2>C贸digo de Vestimenta</h2>
+<h2>Código de Vestimenta</h2>
 <p>Formal / Elegante</p>
 </div>
 
@@ -714,7 +694,7 @@ Fiesta DJ
 
 <div class="section gallery">
 
-<h2>Galer铆a</h2>
+<h2>Galería</h2>
 
 <img src="https://i.postimg.cc/QtLr07kX/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260317-203433-0000.png">
 <img src="https://i.postimg.cc/NFDqszhB/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260317-205351-0000.png">
@@ -724,11 +704,11 @@ Fiesta DJ
 
 <div class="section">
 
-<h2>馃巵 Sobre de Regalos</h2>
+<h2>🎁 Sobre de Regalos</h2>
 
 <p>
 Tu presencia es el mejor regalo,  
-pero si deseas obsequiar algo m谩s  
+pero si deseas obsequiar algo más
 puedes hacerlo mediante transferencia.
 </p>
 
@@ -737,13 +717,14 @@ puedes hacerlo mediante transferencia.
 <div class="panel">
 
 <p><strong>Banco:</strong> BBVA Bancomer</p>
-<p><strong>Beneficiario:</strong> Valeria Gonz谩lez Mart铆nez</p>
-<p><strong>N煤mero de cuenta:</strong> 012345678901234567</p>
+<p><strong>Beneficiario:</strong> Valeria González Martínez</p>
+<p><strong>Número de cuenta:</strong> 012345678901234567</p>
 <p><strong>CLABE:</strong> 012345678901234567</p>
 
 </div>
 
 </div>
+
 
 <!-- CONFIRMACION -->
 
@@ -764,7 +745,7 @@ Confirmar por WhatsApp
 <div class="section">
 
 <p>
-Gracias por ser parte de este d铆a tan especial
+Gracias por ser parte de este día tan especial
 </p>
 
 <h2>Te espero</h2>
@@ -777,9 +758,10 @@ Gracias por ser parte de este d铆a tan especial
 <div id="confirmPopup" class="popup">
 <div class="popup-box">
 
-<h2>鉁� Confirmaci贸n</h2>
+<h2>✨ Confirmación</h2>
 
-<p>Ser谩s redirigido a WhatsApp para enviar tu confirmaci贸n.</p>
+<p>Serás redirigido a WhatsApp para enviar tu confirmación.</p>
+
 
 <button onclick="irWhatsapp()">Continuar</button>
 
@@ -824,10 +806,10 @@ if(distancia < 0){
 
 document.querySelector(".countdown").innerHTML = `
 <h2 style="font-family:'Great Vibes'; font-size:40px;">
-馃帀 隆HOY ES EL GRAN D脥A! 馃帀
+🎉 ¡HOY ES EL GRAN DÍA! 🎉
 </h2>
 <p style="margin-top:10px; font-size:18px;">
-Gracias por acompa帽arme 馃挏
+Gracias por acompañarme 💖
 </p>
 `;
 
@@ -918,10 +900,10 @@ document.getElementById("confirmPopup").classList.add("show");
 
 function irWhatsapp(){
     let mensaje = encodeURIComponent(
-        "Hola, confirmo mi asistencia a los XV de Valeria 馃帀"
+        "Hola, confirmo mi asistencia a los XV de Valeria 🎉"
     );
 
-    // Abrir WhatsApp en nueva pesta帽a
+// Abrir WhatsApp en nueva pestaña
     window.open(
         "https://wa.me/5213341024243?text=" + mensaje,
         "_blank"
